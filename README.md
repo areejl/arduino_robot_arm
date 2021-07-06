@@ -12,12 +12,11 @@
 3. Add the “arduino_robot_arm” package to “src” folder:</br>
 `$ sudo apt install git`</br>
 
-`$ git clone https://github.com/smart-methods/arduino_robot_arm`
-![arm_pckg](gitcomand.png)</br>
+`$ git clone https://github.com/smart-methods/arduino_robot_arm`</br>
+![arm_pckg](gitcomand.png)
 
 4. install the dependencies </br>
 ```
-
 $ cd ~/catkin_ws
 
 $ rosdep install --from-paths src --ignore-src -r -y
@@ -29,7 +28,6 @@ $ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state
 $ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
 
 $ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
-
 ```
 </br>
 
@@ -111,8 +109,7 @@ $ rosrun rosserial_arduino make_libraries.py .
 `$ roslaunch moveit_pkg demo.launch`</br>
 
 11. Open Gazebo </br>
-`$ roslaunch moveit_pkg demo_gazebo.launch`
-</br>
+`$ roslaunch moveit_pkg demo_gazebo.launch`</br>
 ![Gazebo](gazebo.png)
 
 
