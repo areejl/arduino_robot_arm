@@ -95,9 +95,9 @@ $ rosrun rosserial_arduino make_libraries.py .
 ```
 
 9. Controlling the motors in simulation</br>
-`$ roslaunch robot_arm_pkg check_motors.launch`
+`$ roslaunch robot_arm_pkg check_motors.launch`</br>
 ![rviz](rviz.png)
-</br>
+
 
 `$ roslaunch robot_arm_pkg check_motors_gazebo.launch`</br>
 
