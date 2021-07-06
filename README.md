@@ -17,7 +17,7 @@
 
 4. install the dependencies </br>
 ```
-{
+
 $ cd ~/catkin_ws
 
 $ rosdep install --from-paths src --ignore-src -r -y
@@ -29,7 +29,7 @@ $ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state
 $ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
 
 $ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
-}
+
 ```
 </br>
 
@@ -50,7 +50,6 @@ $ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
 8. [Download Arduino IDE on your Ubuntu system](https://www.arduino.cc/en/software)
 
 ```
-{
  $ cd ~/catkin_ws
 
 $ cd src
@@ -94,12 +93,13 @@ $ pwd
 $ rm -rf ros_lib
 
 $ rosrun rosserial_arduino make_libraries.py . 
-}
+
 ```
 
 9. Controlling the motors in simulation</br>
 `$ roslaunch robot_arm_pkg check_motors.launch`
-![rviz](rviz.png)</br>
+![rviz](rviz.png)
+</br>
 
 `$ roslaunch robot_arm_pkg check_motors_gazebo.launch`</br>
 
@@ -110,8 +110,9 @@ $ rosrun rosserial_arduino make_libraries.py .
 
 `$ roslaunch moveit_pkg demo.launch`</br>
 
-11. Open Gazebo
-`$ roslaunch moveit_pkg demo_gazebo.launch`</br>
+11. Open Gazebo </br>
+`$ roslaunch moveit_pkg demo_gazebo.launch`
+</br>
 ![Gazebo](gazebo.png)
 
 
