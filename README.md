@@ -1,4 +1,4 @@
-> arduino_robot_arm
+# arduino_robot_arm
  ## Installing the package arduino_robot_arm - task 2 for track AI at Smart-Methods summer training
 
 1.  create Workspace directory in Ubuntu system's terminal </br>
@@ -8,15 +8,17 @@
 </br>
 
 2. open the directory in Ubuntu system's terminal </br>
-`$ cd ~/catkin_ws/src`
-3. Add the “arduino_robot_arm” package to “src” folder:
-`$ sudo apt install git`
+`$ cd ~/catkin_ws/src`</br>
+3. Add the “arduino_robot_arm” package to “src” folder:</br>
+`$ sudo apt install git`</br>
 
 `$ git clone https://github.com/smart-methods/arduino_robot_arm`
-![arm_pckg](gitcomand.png)
+![arm_pckg](gitcomand.png)</br>
 
-4. install the dependencies 
-`cd ~/catkin_ws`
+4. install the dependencies </br>
+```
+{
+$ cd ~/catkin_ws
 
 $ rosdep install --from-paths src --ignore-src -r -y
 
@@ -27,16 +29,22 @@ $ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state
 $ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
 
 $ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
-5. at the end of the (bashrc) file add the follwing line
-`(source /home/Areej/catkin_ws/devel/setup.bash)`
-*Note : change "Areej" to your system name*
-6. press:
+}
+```
+</br>
+
+5. at the end of the (bashrc) file add the follwing line</br>
+`(source /home/Areej/catkin_ws/devel/setup.bash)`</br>
+>*Note : change "Areej" to your system name*
+
+6. press:</br>
 - ctrl + o
 - Enter
 - crtl + x
-7. runs Rviz:
+</br>
+7. runs Rviz:</br>
 
-`$ roslaunch robot_arm_pkg check_motors.launch`
+`$ roslaunch robot_arm_pkg check_motors.launch`</br>
 
 ---
 8. [Download Arduino IDE on your Ubuntu system](https://www.arduino.cc/en/software)
@@ -89,20 +97,21 @@ $ rosrun rosserial_arduino make_libraries.py .
 }
 ```
 
-9. Controlling the motors in simulation
-$ roslaunch robot_arm_pkg check_motors.launch
-![rviz](rviz.png)
+9. Controlling the motors in simulation</br>
+`$ roslaunch robot_arm_pkg check_motors.launch`
+![rviz](rviz.png)</br>
 
-$ roslaunch robot_arm_pkg check_motors_gazebo.launch
+`$ roslaunch robot_arm_pkg check_motors_gazebo.launch`</br>
 
-$ rosrun robot_arm_pkg joint_states_to_gazebo.py
-10.  run moveIt
-$ roslaunch moveit_setup_assistant setup_assistant.launch
+`$ rosrun robot_arm_pkg joint_states_to_gazebo.py`</br>
 
-$ roslaunch moveit_pkg demo.launch
+10.  Run moveIt</br>
+`$ roslaunch moveit_setup_assistant setup_assistant.launch`</br>
 
-11. open Gazebo
-$ roslaunch moveit_pkg demo_gazebo.launch
+`$ roslaunch moveit_pkg demo.launch`</br>
+
+11. Open Gazebo
+`$ roslaunch moveit_pkg demo_gazebo.launch`</br>
 ![Gazebo](gazebo.png)
 
 
